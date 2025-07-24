@@ -3,13 +3,13 @@
 	"version": "2.0.0",
 	"description": "Simple WhatsApp REST API with multiple device support",
 	"main": "dist/main.js",
-	"scripts": {
-		"build": "prisma generate && prisma db push && tsc",
-		"start": "prisma generate && prisma db push && node dist/main.js",
-		"dev": "prisma generate && prisma db push && nodemon src/main.ts",
-		"prisma:generate": "prisma generate",
-		"prisma:push": "prisma db push"
-	},
+  "scripts": {
+	"build": "tsc",
+	"start": "node dist/main.js",
+	"dev": "nodemon src/main.ts",
+	"prisma:generate": "prisma generate",
+	"prisma:push": "prisma db push"
+  },
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/nizarfadlan/baileys-api.git"
